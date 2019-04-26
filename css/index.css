@@ -3,260 +3,462 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-    font-size: 62.5%;
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
 }
 
-h1, h2, h3, h4, h5 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    font-family: 'Rubik', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
 }
 
 p {
-    font-size: 1.6rem;
-    line-height: 1.6;
+  font-size: 1.6rem;
+  line-height: 1.6;
 }
 
 .container {
-    width: 800px;
-    margin: 0 auto;
+  margin: 0 auto;
+  width: 800px;
 }
 
 /* Header */
 header {
-    width: 100%;
-    height: 40px;
-	display: flex;
-	flex-flow: row;
-    margin: 20px 0;
+  display: flex;
+  flex-flow: row;
+  height: 40px;
+  margin: 20px 0;
+  width: 100%;
 }
 
 header nav {
-    width: 75%;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-    align-content: flex-end;
-    font-size: 1.4rem;
-    margin-left: 25px;
+  align-content: flex-end;
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 1.4rem;
+  justify-content: space-around;
+  margin-left: 25px;
+  width: 75%;
 }
 
 header nav a {
-    color: black;
-    text-decoration: none;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  color: black;
+  text-decoration: none;
 }
 
 header nav a:hover {
-    font-weight: bold;
-    color: teal;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  font-weight: bold;
 }
 
 /* Top */
 .top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+  border-bottom: 1px dashed black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
 }
 
 .top-content img {
-    margin: 20px;
+  margin: 20px;
 }
 
 .top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+  padding: 0 1%;
+  padding-bottom: 20px;
+  width: 48%;
 }
 
 .middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+  border-bottom: 1px dashed black;
+  margin-bottom: 20px;
 }
 
 /* Middle */
 .middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
+  margin-bottom: 0;
+  padding: 0 2%;
 }
 
 .middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.6rem;
+  justify-content: space-evenly;
 }
 
 .middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 12.5%;
+  height: 100px;
+  background: black;
+  margin: 20px 2.5%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Box color definitions */
 .middle-content .boxes .box.teal {
-    background: teal;
+  background: teal;
 }
 .middle-content .boxes .box.gold {
-    background: gold;
+  background: gold;
 }
 .middle-content .boxes .box.cadetblue {
-    background: cadetblue;
+  background: cadetblue;
 }
 .middle-content .boxes .box.coral {
-    background: coral;
+  background: coral;
 }
 .middle-content .boxes .box.crimson {
-    background: crimson;
+  background: crimson;
 }
 .middle-content .boxes .box.forestgreen {
-    background: forestgreen;
+  background: forestgreen;
 }
 .middle-content .boxes .box.darkorchid {
-    background: darkorchid;
+  background: darkorchid;
 }
 .middle-content .boxes .box.hotpink {
-    background: hotpink;
+  background: hotpink;
 }
 .middle-content .boxes .box.indigo {
-    background: indigo;
+  background: indigo;
 }
 .middle-content .boxes .box.dodgerblue {
-    background: dodgerblue;
+  background: dodgerblue;
 }
 
 /* Bottom */
 .bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 2% 20px;
 }
 
 .bottom-content .text-container {
-    padding-right: 4%;
+  padding-right: 4%;
 }
 
 .bottom-content .text-container:last-child {
-    padding-right: 0;
+  padding-right: 0;
 }
 
 footer {
-    width: 100%;
-    background: black;
+  background: black;
+  width: 100%;
 }
 
 footer nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 1.4rem;
+  align-items: center;
+  display: flex;
+  font-size: 1.4rem;
+  justify-content: space-between;
+  padding: 20px 2%;
+  width: 60%;
 }
 
 footer nav a {
-    color: white;
-    text-decoration: none;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  color: white;
+  text-decoration: none;
+}
+
+footer nav a:hover {
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
 }
 
 /* About Page specific styling */
 
 .about-page .top-content .text-container {
-    width: 100%;
-    padding: 0 2%;
-    padding-bottom: 20px;  
+  padding: 0 2%;
+  padding-bottom: 20px;
+  width: 100%;
 }
 
 .about-page .middle-content {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-    align-content: flex-start;
-    border: 0;
+  align-content: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 .about-page .middle-content img {
-    width: 100%;
+  width: 100%;
 }
 
 .about-page .middle-content h2 {
-    padding: 10px 0;
-    margin-bottom: 0;
+  margin-bottom: 0;
+  padding: 10px 0;
 }
 
 .about-page .middle-content .box {
-	width: 45%;
-    margin: 20px 2.5% 30px;
-    padding-bottom: 20px;
-    color: black;
-    border-bottom: 1px dashed black;
+  border-bottom: 1px dashed black;
+  color: black;
+  margin: 20px 2.5% 30px;
+  padding-bottom: 20px;
+  width: 45%;
 }
 
 .about-page .middle-content button {
-    margin-top: 15px;
-    font-size: 18px;
-    background: white;
-    padding: 5px 20px;
-    border: 2px solid black;
-    border-radius: 5px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 15px;
+  padding: 5px 20px;
 }
 
 .about-page .bottom-content {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+/* Styles for small screens */
+
+@media screen and (max-width: 750px) {
+  .container {
+    width: 100%;
+  }
+
+  header {
+    align-items: center;
+    flex-flow: column;
+    height: auto;
+  }
+
+  footer {
+    background: white;
+    width: 100%;
+  }
+
+  footer nav {
+    width: 100%%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    font-size: 1.4rem;
+  }
+
+  header nav,
+  footer nav {
+    align-content: center;
+    flex-flow: column wrap;
+    height: 300px;
+    margin: 20px 0 0 0;
+    width: 100%;
+  }
+
+  header nav a,
+  footer nav a {
+    background: black;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    color: white;
+    font-size: 1.6rem;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  header nav a:hover,
+  header nav a:active,
+  footer nav a:hover,
+  footer nav a:active {
+    background: white;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    color: black;
+  }
+
+  .top-content .text-container {
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  p {
+    padding: 0 5%;
+  }
+
+  .middle-content .boxes .box {
+    width: 25%;
+  }
+
+  .about-page .middle-content .box {
+    width: 100%;
+  }
+
+  .about-page .middle-content .box button {
+    display: block;
+    margin: 15px auto;
+    max-width: 150px;
+    text-align: center;
+    width: 50%;
+  }
+
+  .bottom-content {
+    flex-direction: column;
+  }
+
+  .bottom-content .text-container {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .middle-content .boxes .box {
+    width: 45%;
+  }
 }
